@@ -18,3 +18,22 @@ body {
   background: #C6D9E5
 }
 
+
+
+@keyframes border-gradient {
+  0% { border-color: #3b82f6; }  /* Blue-500 */
+  25% { border-color: #60a5fa; } /* Blue-400 */
+  50% { border-color: #93c5fd; } /* Blue-300 */
+  75% { border-color: #60a5fa; } /* Blue-400 */
+  100% { border-color: #3b82f6; } /* Blue-500 */
+}
+
+.animate-border-gradient {
+  animation: border-gradient 2s infinite linear;
+}
+
+
+.button-rounded {
+  border-radius: 50px; /* More rounded */
+  padding: 14px;
+}
