@@ -9,12 +9,18 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-[#567C8D] md:bg-opacity-100 bg-opacity-70 backdrop-blur-md text-white py-4 lg:px-30 md:px-20 sm:px-6 px-2 flex items-center justify-between z-50 shadow-md">
       {/* Left Section (Contact Info - Visible on both Mobile & Desktop) */}
       <div className="pl-3 flex flex-col items-start md:items-center flex-1 md:flex-row md:space-x-5">
-        <a href="mailto:support@ajanta.com" className="text-xs md:text-sm hover:underline hover:font-bold transition-all ease-in-out duration-200">
-          📧 Email Us
-        </a>
-        <a href="tel:+919876543210" className="text-xs md:text-sm hover:underline hover:font-bold transition-all ease-in-out duration-200">
-          📞 Call Us
-        </a>
+        {[
+          { text: "📧 Email Us", href: "mailto:support@ajanta.com" },
+          { text: "📞 Call Us", href: "tel:+919876543210" },
+        ].map((item, index) => (
+          <a
+            key={index}
+            href={item.href}
+            className="relative text-xs md:text-sm transition-all duration-300 ease-in-out hover:opacity-80 after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {item.text}
+          </a>
+        ))}
       </div>
 
       {/* Logo - Always Centered */}
@@ -23,7 +29,7 @@ function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex space-x-10 text-lg font-semibold flex-1 justify-end">
+      <div className="hidden md:flex text-lg ml-5 font-semibold space-x-2 justify-end md:space-x-5 lg:space-x-10 ">
         {["Home", "Product", "About Us", "Contact Us"].map((item, index) => (
           <a
             key={index}
