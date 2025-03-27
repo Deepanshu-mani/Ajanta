@@ -15,10 +15,31 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #C6D9E5
+  background: #FAF9F6;
+  
+  
 }
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.anton-regular {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .choose-us{
+  font-family: "Anton", serif;
+
+}
+.about-us{
+  font-family: "Anton", serif;
+
+} */
 
 @keyframes border-gradient {
   0% { border-color: #3b82f6; }  /* Blue-500 */

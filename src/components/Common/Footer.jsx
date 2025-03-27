@@ -3,7 +3,7 @@ import { FaClock, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"
 
 function Footer() {
   return (
-    <footer className="relative bg-[#244447] text-white py-12 px-10 w-full mt-auto">
+    <footer className="relative bg-[#2C252A] text-white py-12 px-10 w-full mt-auto">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
 
         {/* Left Section - Company Info */}
@@ -69,7 +69,7 @@ function Footer() {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="Ajanta Bags Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.173618575616!2d77.6712132!3d28.9476046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c65e171a20095%3A0x30b27a8f33c10459!2sAjanta%20Bags!5e0!3m2!1sen!2sin!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412.990262140002!2d77.66920323986743!3d28.954978364518787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c65e171a20095%3A0x30b27a8f33c10459!2sAjanta%20Bags!5e0!3m2!1sen!2sin!4v1743063313845!5m2!1sen!2sin"
               width="100%"
               height="200"
               style={{ border: 0 }}
@@ -83,8 +83,8 @@ function Footer() {
         
 
       </div>
-      <div className="absolute left-0 w-full z-50 bg-gray-800 text-white text-center bottom-0">
-        <p className="text-lg">&copy; 2025 All rights reserved.</p>
+      <div className="absolute left-0 w-full z-50 py-1 bg-[#E0E0E0] text-black text-center bottom-0">
+        <p className="text-lg">&copy; {new Date().getFullYear()} All rights reserved.</p>
         </div>
     </footer>
   );

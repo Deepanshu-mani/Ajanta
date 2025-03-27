@@ -3,7 +3,7 @@ import aboutUs from "../../../assets/aboutUs.png";
 
 function AboutUs() {
   return (
-    <div className="flex flex-col md:flex-row bg-white max-w-[1600px] mx-auto rounded-xl p-8 shadow-xl mt-16 transition-all duration-300 ease-in-out hover:shadow-2xl">
+    <div className="flex flex-col md:flex-row max-w-[1600px] mx-auto rounded-xl p-8 shadow-xl mt-16 transition-all duration-300 ease-in-out hover:shadow-2xl">
       
       {/* Image Section */}
       <div className="md:w-1/2 w-full flex justify-center p-4">
@@ -15,9 +15,9 @@ function AboutUs() {
       </div>
 
       {/* Text Section */}
-      <div className="md:w-1/2 w-full flex flex-col justify-center p-6">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-6">About Us</h2>
-        <p className="text-gray-700 text-xl leading-relaxed mb-4">
+      <div className="about-us md:w-1/2 w-full flex flex-col justify-center p-6">
+        <h2 className="text-4xl font-extrabold text-gray-900 underline mb-6">About Us</h2>
+        <p className="text-gray-700 text-lg leading-relaxed mb-4">
           At <strong className="text-blue-600">Ajanta Bags</strong>, we are committed to delivering **high-quality, stylish, and durable** bags for every need. 
           Since our establishment in <strong className="text-gray-900">1978</strong>, we have grown into a trusted name in the industry, offering a diverse range of products from travel and office bags to school and sports bags.
         </p>

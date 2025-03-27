@@ -6,9 +6,9 @@ function WhyChooseUs() {
     <div className="flex flex-col md:flex-row items-center bg-white max-w-[1600px] mx-auto rounded-xl p-8 shadow-xl mt-16 transition-all duration-300 ease-in-out hover:shadow-2xl">
       
       {/* Text Section */}
-      <div className="md:w-1/2 w-full flex flex-col justify-center p-8">
+      <div className="choose-us md:w-1/2 w-full flex flex-col justify-center  p-8">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-6">Why Choose Us?</h2>
-        <p className="text-gray-700 text-lg leading-relaxed mb-4">
+        <p className="text-gray-700 text-lg  leading-relaxed mb-4">
           We are committed to delivering top-notch quality, innovative designs, and exceptional customer service. Here’s why we stand out:
         </p>
         <ul className="text-gray-700 text-lg space-y-4">
